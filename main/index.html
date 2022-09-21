@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru" class="max-w-[1920px] min-w-[640px] h-auto" style="margin: 0 auto;">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <title>ПРОМУТИЛ</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="sal.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+        </style>
+    </head>
+    <body class="max-w-[1920px] min-w-[640px] h-auto" style="margin: 0 auto;">
+        <div class="relative max-w-[1920px] min-w-[640px] h-auto" style="margin: 0 auto;">
+            <div class="view-doc absolute top-0 right-0 bottom-0 left-0 z-[999] bg-[#00000086] p-[20px] sm:p-[40px] ease-in-out duration-300 hidden">
+                <div class="max-w-[1024px] h-auto bg-white m-auto rounded-[15px] p-[20px]">
+                    <div class="flex items-center justify-between">
+                        <span class="font-rubic font-[700] text-[24px] uppercase">ПромУтилизация</span>
+                        <svg class="view-doc-close w-[40px] h-[40px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div>
+                    <div>
+                        <img class="w-[100%] w-[300px] sm:w-full" id="view-doc-image" src="../image/doc/doc-01-1.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="fixed bottom-0 z-50 w-[600px] h-[100px] bg-white rounded-t-[15px] shadow-[0px_0px_10px_#E6E6E6] left-[50%] translate-x-[-50%] flex items-center justify-between px-5 duration-300 ease-in-out translate-y-[100%]">
+                <div class="font-open-sans text-base"> Мы используем файлы cookie для улучшения <br> работы сайта. </div>
+                <div class="w-4"></div>
+                <a href="#request" class="font-open-sans font-[600] text-[16px] leading-[24px] text-white px-[25px] py-[15px] rounded-[15px] bg-mlc shadow-[0px_0px_5px_#29884D] hover:ring-2 ring-mlc hover:ring-offset-2 ease-in-out duration-300">Принять</a>
+            </div>
+
+            <header class="max-w-[1920px] min-w-[640px] h-auto p-[20px] absolute left-0 top-0 right-0 z-50 bg-[url('../image/bg/bg-banner.png')] bg-cover bg-center bg-no-repeat menu">
+                <a name="top-page"></a>
+                <div class="container h-[100px]">
+                    <div class="max-w-[1280px] h-full m-auto flex items-center justify-between px-[20px] sm:p-0">
+                        <a href="index.html" class="block w-[90px] h-full bg-cover bg-center bg-no-repeat" style="background-image: url('../image/logo/logo_color.png');">
+                            <!-- The logotype via css -->
+                        </a>
+
+                        <nav class="hidden sm:block main-menu">
+                            <a href="index.html" id="main-menu__item-1" class="main-menu__item font-open-sans font-[400] text-[16px] leading-[21.79px] pl-[10x] hover:text-mc ease-in-out duration-300">Главная</a>
+                            <a href="index.html#services" id="main-menu__item-2" class="main-menu__item font-open-sans font-[400] text-[16px] leading-[21.79px] pl-[10px] hover:text-mc ease-in-out duration-300">Услуги</a>
+                            <a href="about.html" id="main-menu__item-3" class="main-menu__item font-open-sans font-[400] text-[16px] leading-[21.79px] pl-[10px] hover:text-mc ease-in-out duration-300">О компании</a>
+                            <a href="doc.html" id="main-menu__item-4" class="main-menu__item font-open-sans font-[400] text-[16px] leading-[21.79px] pl-[10px] hover:text-mc ease-in-out duration-300">Документы</a>
+                            <a href="news.html" id="main-menu__item-5" class="main-menu__item font-open-sans font-[400] text-[16px] leading-[21.79px] pl-[10px] hover:text-mc ease-in-out duration-300">Новости</a>
+                            <a href="contacts.html" id="main-menu__item-6" class="main-menu__item font-open-sans font-[400] text-[16px] leading-[21.79px] pl-[10px] hover:text-mc ease-in-out duration-300">Контакты</a>
+                        </nav>
+
+                        <div class="text-left sm:text-right block sm:hidden lg:block">
+                            <div class="font-rubic font-[700] text-[24px] leading-[28.44px] text-ac">8-800-201-75-69</div>
+                            <div class="font-open-sans font-[400] text-[14px] leading-[28px]">8 (8422) 27-33-88 / promutil@rambler.ru</div>
+                        </div>
+
+                        <div class="items-center justify-center hidden xl:flex">
+                            <a href="#request" class="font-open-sans font-[600] text-[16px] leading-[24px] text-white px-[25px] py-[15px] rounded-[15px] bg-mlc shadow-[0px_0px_5px_#29884D] hover:ring-2 ring-mlc hover:ring-offset-2 ease-in-out duration-300">Оставить заявку</a>
+                        </div>
+
+                        <div class="flex items-center justify-center sm:hidden">
+                            <svg class="w-[50px] h-[50px] open-btn-nav cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="mobile-nav max-w-[1920px] min-w-[640px] p-[40px] pt-[120px] pb-[20px] absolute left-0 top-0 right-0 z-40 bg-[url('../image/bg/bg-banner.png')] bg-cover bg-center bg-no-repeat shadow-[0px_20px_30px] shadow-[rgba(0,0,0,0.08)] block sm:hidden close">
+                <nav class="block w-full h-full pt-[50px] py-[10px] mobile-menu">
+
+                </nav>
+            </div>
+
+            <main class="w-[100%] h-auto">
+                <div class="w-full h-auto bg-[url('../image/bg/bg-banner.png')] bg-cover bg-center bg-no-repeat shadow-[0px_20px_30px] shadow-[rgba(0,0,0,0.08)] hidden sm:block">
+                    <div class="container h-[850px] pt-[120px] flex items-stretch justify-start">
+                        <div class="w-[50%] bg-[length:90%_auto] xl:bg-[length:80%_auto] bg-center bg-no-repeat hidden lg:block" style="background-image: url('../image/index/banner.png');">
+                            <!-- The banner image via css -->
+                        </div>
+                        <div class="w-full lg:w-[50%] flex items-center justify-start px-[20px] md:p-0">
+                            <div class="w-full">
+                                <div class="w-full font-open-sans font-[400] text-[16px] text-mgc leading-[20px]">Группа компаний</div>
+
+                                <h1 class="w-full font-rubic font-[700] text-[56px] xl:text-[56px] lg:text-[46px] text-mc leading-[70px] uppercase"
+                                    data-sal="slide-up"
+                                    data-sal-duration="1000"
+                                    data-sal-delay="300"
+                                    data-sal-easing="ease-out-back"
+                                >ПромУтилизация</h1>
+
+                                <div class="w-full mt-[30px]">
+                                    <div class="flex items-center justify-start font-open-sans font-[400] text-[18px] leading-[36px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-[10px]" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                        </svg>
+                                        Утилизация
+                                    </div>
+                                    <div class="flex items-center justify-start font-open-sans font-[400] text-[18px] leading-[36px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-[10px]" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                        </svg>
+                                        Обезвреживание 
+                                    </div>
+                                    <div class="flex items-center justify-start font-open-sans font-[400] text-[18px] leading-[36px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-[10px]" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                        </svg>
+                                        Обработка
+                                    </div>
+                                    <div class="flex items-center justify-start font-open-sans font-[400] text-[18px] leading-[36px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-[10px]" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                        </svg>
+                                        Транспортирование
+                                    </div>
+                                </div>
+
+                                <h4 class="font-rubic font-[500] text-[22px] leading-[27.5px] mt-[25px]">Более 4 600 видов отходов I-IV классов отходов</h4>
+
+                                <a href="search.html" class="mt-[40px] w-full sm:w-auto inline-block text-center font-open-sans font-[600] text-[16px] leading-[24px] text-white px-[25px] py-[15px] rounded-[15px] shadow-[0px_0px_5px_#FEBF0A] hover:ring-2 ring-ac hover:ring-offset-2 ease-in-out duration-300" style="background-image: linear-gradient(180deg, #FD9C48 6.73%, #FDB84B 26.62%, #FDCE4A 76.37%, #FDE248 100%);">Поиск по ФКО</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full h-auto bg-[url('../image/bg/bg-banner.png')] bg-cover bg-center bg-no-repeat shadow-[0px_20px_30px] shadow-[rgba(0,0,0,0.08)] block sm:hidden">
+                    <div class="container h-auto pt-[150px] block sm:flex sm:items-stretch sm:justify-start">
+                        <div class="w-full lg:w-[50%] flex items-center justify-start px-[20px] md:p-0">
+                            <div class="w-full relative">
+                                <div class="w-full font-open-sans font-[400] text-[16px] text-mgc leading-[20px]">Группа компаний</div>
+
+                                <h1 class="w-full font-rubic font-[700] text-[56px] xl:text-[56px] lg:text-[46px] text-mc leading-[70px] uppercase"
+                                    data-sal="slide-up"
+                                    data-sal-duration="1000"
+                                    data-sal-delay="300"
+                                    data-sal-easing="ease-out-back"
+                                >ПромУтилизация</h1>
+
+                                <div class="w-full mt-[30px]">
+                                    <div class="flex items-center justify-start font-open-sans font-[400] text-[18px] leading-[36px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-[10px]" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                        </svg>
+                                        Утилизация
+                                    </div>
+                                    <div class="flex items-center justify-start font-open-sans font-[400] text-[18px] leading-[36px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-[10px]" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                        </svg>
+                                        Обезвреживание 
+                                    </div>
+                                    <div class="flex items-center justify-start font-open-sans font-[400] text-[18px] leading-[36px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-[10px]" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                        </svg>
+                                        Обработка
+                                    </div>
+                                    <div class="flex items-center justify-start font-open-sans font-[400] text-[18px] leading-[36px]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-[10px]" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                        </svg>
+                                        Транспортирование
+                                    </div>
+                                </div>
+
+                                <h4 class="font-rubic font-[500] text-[22px] leading-[27.5px] mt-[25px]">Более 4 600 видов отходов I-IV классов отходов</h4>
+
+                                <a href="search.html" class="absolute right-[20px] top-[80px] mt-[40px] w-auto inline-block text-center font-open-sans font-[600] text-[16px] leading-[24px] text-white px-[25px] py-[15px] rounded-[15px] shadow-[0px_0px_5px_#FEBF0A] hover:ring-2 ring-ac hover:ring-offset-2 ease-in-out duration-300" style="background-image: linear-gradient(180deg, #FD9C48 6.73%, #FDB84B 26.62%, #FDCE4A 76.37%, #FDE248 100%);">Поиск по ФКО</a>
+                            </div>
+                        </div>
+
+                        <div class="w-full lg:w-[50%] h-[500px] mt-[50px] bg-[length:90%_auto] xl:bg-[length:80%_auto] bg-center bg-no-repeat" style="background-image: url('../image/index/banner.png');">
+                            <!-- The banner image via css -->
+                        </div>
+                    </div>
+                </div>
+
+                <a name="services"></a>
+                <div class="w-full h-auto m-auto py-[100px]">
+                    <div class="container xl:max-w-[1280px] min-w-[640px]">
+                        <div class="h-auto lg:h-[400px] block sm:flex sm:items-stretch sm:justify-center">
+                            <div class="w-full sm:w-[60%] py-[60px] bg-[url('../image/bg/bg-03.png')] bg-[length:100%_100%] lg:bg-[length:auto_100%] bg-right bg-no-repeat px-[15px] md:pr-[100px] flex items-center justify-start">
+                                <div>
+                                    <h2 class="font-rubic font-[700] text-[36px] leading-[45px] uppercase">Утилизация под ключ</h2>
+                                    <p class="font-open-sans font-[400] text-[16px] leading-[32px] mt-[20px] mb-[30px]">Вам не придется искать несколько компаний для утилизации разного типа отходов. Мы принимаем более 200 видов отходов 1-4- класса опасности и предоставляем комплексный пакет услуг от оформления всех необходимых документов, до вывоза отходов с вашего предприятия</p>
+                                    <a href="search.html" class="w-full sm:w-auto inline-block text-center font-open-sans font-[600] text-[16px] leading-[24px] text-white px-[50px] py-[15px] bg-mlc rounded-[15px] shadow-[0px_0px_5px_#5DC383] hover:ring-2 ring-mlc hover:ring-offset-2 ease-in-out duration-300">Категории отходов</a>    
+                                </div>  
+                            </div>
+                            <div class="w-full sm:w-[40%] h-[400px] sm:h-auto bg-cover bg-center bg-no-repeat relative" style="background-image: url('../image/index/img-01.png');">
+                                <img src="../image/index/e-01.png" class="absolute right-0 bottom-0 translate-x-[50%] translate-y-[15px] hidden lg:block">
+                            </div>
+                        </div>
+
+                        <div class="h-auto lg:h-[400px] hidden sm:flex sm:items-stretch sm:justify-center mt-[50px]">
+                            <div class="w-full sm:w-[40%] h-[400px] sm:h-auto bg-cover bg-center bg-no-repeat relative" style="background-image: url('../image/index/img-02.png');">
+                                <img src="../image/index/e-02.png" class="absolute bottom-0 left-0 translate-x-[-69%] translate-y-[15px] hidden lg:block">
+                            </div>
+                            <div class="w-full sm:w-[60%] py-[60px] bg-[url('../image/bg/bg-03.png')] bg-[length:100%_100%] lg:bg-[length:auto_100%] bg-left bg-no-repeat px-[15px] md:pl-[100px] flex items-center justify-start">
+                                <div>
+                                    <h2 class="font-rubic font-[700] text-[36px] leading-[45px] uppercase">Персональный менеджер</h2>
+                                    <p class="font-open-sans font-[400] text-[16px] leading-[32px] mt-[20px] mb-[30px]">Наши специлисты всегда на связи. Подготовят все необходимые документы и проследят чтобы отходы вашего производства были вывезены своевременно</p>
+                                    <a href="#request" class="w-full sm:w-auto inline-block text-center font-open-sans font-[600] text-[16px] leading-[24px] text-white px-[50px] py-[15px] bg-mlc rounded-[15px] shadow-[0px_0px_5px_#5DC383] hover:ring-2 ring-mlc hover:ring-offset-2 ease-in-out duration-300">Оставить заявку</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="h-auto lg:h-[400px] block sm:hidden mt-[50px]">
+                            <div class="w-full sm:w-[60%] py-[60px] bg-[url('../image/bg/bg-03.png')] bg-[length:100%_100%] lg:bg-[length:auto_100%] bg-left bg-no-repeat px-[15px] md:pl-[100px] flex items-center justify-start">
+                                <div>
+                                    <h2 class="font-rubic font-[700] text-[36px] leading-[45px] uppercase">Персональный менеджер</h2>
+                                    <p class="font-open-sans font-[400] text-[16px] leading-[32px] mt-[20px] mb-[30px]">Наши специлисты всегда на связи. Подготовят все необходимые документы и проследят чтобы отходы вашего производства были вывезены своевременно</p>
+                                    <a href="#request" class="w-full sm:w-auto inline-block text-center font-open-sans font-[600] text-[16px] leading-[24px] text-white px-[50px] py-[15px] bg-mlc rounded-[15px] shadow-[0px_0px_5px_#5DC383] hover:ring-2 ring-mlc hover:ring-offset-2 ease-in-out duration-300">Оставить заявку</a>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-[40%] h-[400px] sm:h-auto bg-cover bg-center bg-no-repeat relative" style="background-image: url('../image/index/img-02.png');">
+                                <img src="../image/index/e-02.png" class="absolute bottom-0 left-0 translate-x-[-69%] translate-y-[15px] hidden lg:block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full min-w-[640px] h-auto m-auto">
+                    <div class="h-[600px] lg:h-[500px] container min-w-[640px] rounded-[15px] bg-[url('../image/bg/bg-02.png')] bg-cover bg-center bg-no-repeat shadow-[0px_0px_50px_#E6E6E6]">
+                        <div class="container xl:max-w-[1280px] min-w-[640px] h-full bg-[url('../image/bg/bg-01.png')] bg-[length:100%_auto] md:bg-[length:auto_auto] bg-right-bottom bg-no-repeat flex items-start lg:items-center justify-start px-[20px] exl:p-0 pt-[50px] lg:pt-0">
+                            <div class="lg:bg-none p-[20px] xl:p-0 rounded-[15px]">
+                                <h2 class="font-rubic font-[700] text-[36px] leading-[45px] uppercase mb-[20px]">Работа по всей России</h2>
+                                <p class="font-open-sans font-[400] text-[16px] leading-[32px] w-full md:w-[482px]">
+                                    Мы осуществляем деятельность более 15 лет. Предоставляем неограниченные возможности для сотрудничества по всей территории РФ.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full h-auto py-[100px] m-auto px-[20px] md:px-0">
+                    <div class="container xl:max-w-[1280px] min-w-[640px]">
+                        <div class="w-full h-auto m-auto">
+                            <h2 class="font-rubic font-[700] text-[36px] leading-[45px] uppercase text-center mb-[50px]">Основные направления деятельности</h2>
+
+                            <div class="block m-auto w-full">
+                                <div class="h-auto md:h-[180px] m-auto grid grid-rows-1 grid-cols-4">
+                                    <div class="hover:scale-125 ease-in-out duration-300 cursor-crosshair">
+                                        <img src="../image/index/e-03.png" class="m-auto mb-[15px]">
+                                        <p class="font-open-sans font-[600] text-[14px] md:text-[16px] leading-[24px] text-center px-[10px] lg:px-[40px]">
+                                            Утилизация совтола, совтолосодержащих конденсаторов и трансформаторов
+                                        </p>
+                                    </div>
+                                    <div class="hover:scale-125 ease-in-out duration-300 cursor-crosshair">
+                                        <img src="../image/index/e-04.png" class="m-auto mb-[15px]">
+                                        <p class="font-open-sans font-[600] text-[14px] md:text-[16px] leading-[24px] text-center px-[10px] lg:px-[40px]">
+                                            Зачистка топливных резервуаров, утилизация и переработка нефтешламов
+                                        </p>
+                                    </div>
+                                    <div class="hover:scale-125 ease-in-out duration-300 cursor-crosshair">
+                                        <img src="../image/index/e-03.png" class="m-auto mb-[15px]">
+                                        <p class="font-open-sans font-[600] text-[14px] md:text-[16px] leading-[24px] text-center px-[10px] lg:px-[40px]">
+                                            Утилизация химикатов и ядохимикатов, утилизация пестицидов
+                                        </p>
+                                    </div>
+                                    <div class="hover:scale-125 ease-in-out duration-300 cursor-crosshair">
+                                        <img src="../image/index/e-05.png" class="m-auto mb-[15px]">
+                                        <p class="font-open-sans font-[600] text-[14px] md:text-[16px] leading-[24px] text-center px-[10px] lg:px-[40px]">
+                                            Утилизация отходов промышленной группы всех классов опасности
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block m-auto w-full">
+                                <div class="h-auto md:h-[180px] m-auto grid grid-rows-1 grid-cols-4 mt-[30px]">
+                                    <div class="hover:scale-125 ease-in-out duration-300 cursor-crosshair">
+                                        <img src="../image/index/e-05.png" class="m-auto mb-[15px]">
+                                        <p class="font-open-sans font-[600] text-[14px] md:text-[16px] leading-[24px] text-center px-[10px] lg:px-[40px]">
+                                            Транспортировка отходов и кислот
+                                        </p>
+                                    </div>
+                                    <div class="hover:scale-125 ease-in-out duration-300 cursor-crosshair">
+                                        <img src="../image/index/e-03.png" class="m-auto mb-[15px]">
+                                        <p class="font-open-sans font-[600] text-[14px] md:text-[16px] leading-[24px] text-center px-[10px] lg:px-[40px]">
+                                            Утилизация шин и покрышек
+                                        </p>
+                                    </div>
+                                    <div class="hover:scale-125 ease-in-out duration-300 cursor-crosshair">
+                                        <img src="../image/index/e-05.png" class="m-auto mb-[15px]">
+                                        <p class="font-open-sans font-[600] text-[14px] md:text-[16px] leading-[24px] text-center px-[10px] lg:px-[40px]">
+                                            Утилизация медицинских отходов
+                                        </p>
+                                    </div>
+                                    <div class="hover:scale-125 ease-in-out duration-300 cursor-crosshair">
+                                        <img src="../image/index/e-04.png" class="m-auto mb-[15px]">
+                                        <p class="font-open-sans font-[600] text-[14px] md:text-[16px] leading-[24px] text-center px-[10px] lg:px-[40px]">
+                                            Демеркуризация ртутьсодержащих отходов
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block m-auto w-full">
+                                <div class="h-auto md:h-[180px] m-auto grid grid-rows-1 grid-cols-4 mt-[30px]">
+                                    <div class="hover:scale-125 ease-in-out duration-300 cursor-crosshair">
+                                        <img src="" class="m-auto mb-[15px]">
+                                        <p class="font-open-sans font-[600] text-[14px] md:text-[16px] leading-[24px] text-center px-[10px] lg:px-[40px]">
+                                            
+                                        </p>
+                                    </div>
+                                    <div class="hover:scale-125 ease-in-out duration-300 cursor-crosshair">
+                                        <img src="../image/index/e-04.png" class="m-auto mb-[15px]">
+                                        <p class="font-open-sans font-[600] text-[14px] md:text-[16px] leading-[24px] text-center px-[10px] lg:px-[40px]">
+                                            Зачистка резервуаров
+                                        </p>
+                                    </div>
+                                    <div class="hover:scale-125 ease-in-out duration-300 cursor-crosshair">
+                                        <img src="../image/index/e-03.png" class="m-auto mb-[15px]">
+                                        <p class="font-open-sans font-[600] text-[14px] md:text-[16px] leading-[24px] text-center px-[10px] lg:px-[40px]">
+                                            Предоставление тары
+                                        </p>
+                                    </div>
+                                    <div class="hover:scale-125 ease-in-out duration-300 cursor-crosshair">
+                                        <img src="" class="m-auto mb-[15px]">
+                                        <p class="font-open-sans font-[600] text-[14px] md:text-[16px] leading-[24px] text-center px-[10px] lg:px-[40px]">
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="search.html" class="mt-[30px] md:mt-0 w-full sm:w-auto inline-block text-center font-open-sans font-[600] text-[16px] leading-[24px] text-white px-[50px] py-[15px] bg-mlc rounded-[15px] shadow-[0px_0px_5px_#5DC383] hover:ring-2 ring-mlc hover:ring-offset-2 ease-in-out duration-300 relative left-[50%] translate-x-[-50%]">Посмотреть направления</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full h-auto py-[100px] m-auto bg-eelc px-[20px] sm:px-0">
+                    <div class="mx-w-[1280px] m-auto">
+                        <h2 class="font-rubic font-[700] text-[36px] leading-[45px] text-center uppercase">НАМ ДОВЕРЯЮТ КОМПАНИИ СО ВСЕЙ РОССИИ</h2>
+                        <p class="font-open-sans font-[400] text-[16px] leading-[32px] text-center max-w-[995px] m-auto mt-[20px] mb-[40px]">
+                            Мы являемся современной и технологичной компанией, которая постоянно развивается и уже зарекомендовала себя как надежный и честный партнер
+                        </p>
+                    </div>
+                    <div class="w-full h-[130px] m-auto overflow-hidden">
+                        <div class="w-auto h-full m-auto flex items-center justify-center">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/redbull.png">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/shell.png">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/canon.png">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/dell.png">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/harley.png">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/starbucks.png">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/nintendo.png">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/cocacola.png">
+
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/redbull.png">
+                        </div>
+                    </div>
+                    <div class="w-full h-[130px] m-auto overflow-hidden mt-[20px]">
+                        <div class="w-auto h-full m-auto flex items-center justify-center">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/harley.png">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/starbucks.png">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/nintendo.png">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/cocacola.png">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/redbull.png">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/shell.png">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/canon.png">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/dell.png">
+
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/harley.png">
+                            <img class="mx-[45px] grayscale hover:grayscale-0 ease-in-out duration-300 cursor-crosshair hover:scale-125" src="../image/index/starbucks.png">
+                        </div>
+                    </div>
+
+                    <div class="w-full mt-[60px]">
+                        <a href="#request" class="w-full sm:w-auto inline-block text-center font-open-sans font-[600] text-[16px] leading-[24px] text-white px-[50px] py-[15px] bg-mlc rounded-[15px] shadow-[0px_0px_5px_#5DC383] hover:ring-2 ring-mlc hover:ring-offset-2 ease-in-out duration-300 relative left-[50%] translate-x-[-50%]">Оставить заявку</a>
+                    </div>
+                </div>
+
+                <div class="w-full h-auto min-w-[640px] py-[100px] m-auto">
+                    <div class="container xl:max-w-[1280px] min-w-[640px] px-[20px] sm:px-0">
+                        <h2 class="font-rubic font-[700] text-[36px] leading-[45px] text-center uppercase mb-[50px]">НОВОСТИ ПРОМУТИЛИЗАЦИИ</h2>
+                        <div class="w-full h-auto block xl:flex items-stretch justify-between">
+                            <a href="view-news.html" class="relative flex items-stretch justify-between xl:block w-full xl:w-[380px] h-auto sm:h-[400px] xl:h-[778px] rounded-[15px] shadow-[0px_0px_10px_#E6E6E6] overflow-hidden hover:scale-105 hover:shadow-[0px_0px_50px_#E6E6E6] ease-in-out duration-300 mb-[30px] xl:mb-0">
+                                <div class="w-[50%] xl:w-full xl:h-[50%] bg-[length:auto__100%] md:bg-[length:100%__auto] bg-center bg-no-repeat" style="background-image: url('../image/index/img-03.png');">
+                                    <!-- The news image via css -->
+                                </div>
+                                <div class="w-[50%] xl:w-full px-[25px] py-[40px]">
+                                    <h4 class="font-rubic font-[500] text-[22px] leading-[27.5px] text-mdc">Накопление-складирование отходов</h4>
+                                    <p class="font-open-sans font-[400] text-[16px] leading-[32px] text-mdc my-[20px]">
+                                        Накопление-складирование отходов допускается на срок не более чем 11 месяцев в целях их 
+                                        дальнейшей обработки, утилизации, обезвреживания, размещения (ФЗ-89 от 24.07.98)
+                                    </p>
+                                </div>
+                                <div class="absolute left-0 bottom-[40px] right-0 px-[25px] w-full h-auto flex items-center justify-between">
+                                    <div class="font-open-sans font-[400] text-[16px] leading-[32px] text-mgc">16 ноября 2021</div>
+                                    <div class="font-open-sans font-[400] text-[16px] leading-[32px] text-mc">Читать полностью</div>
+                                </div>
+                            </a>
+
+                            <a href="view-news.html" class="relative flex items-stretch justify-between xl:block w-full xl:w-[380px] h-auto sm:h-[400px] xl:h-[778px] rounded-[15px] shadow-[0px_0px_10px_#E6E6E6] overflow-hidden hover:scale-105 hover:shadow-[0px_0px_50px_#E6E6E6] ease-in-out duration-300 mb-[30px] xl:mb-0">
+                                <div class="w-[50%] xl:w-full xl:h-[50%] bg-[length:auto__100%] md:bg-[length:100%__auto] bg-center bg-no-repeat" style="background-image: url('../image/index/img-04.png');">
+                                    <!-- The news image via css -->
+                                </div>
+                                <div class="w-[50%] xl:w-full px-[25px] py-[40px] pb-[80px] sm:pb-[40px]">
+                                    <h4 class="font-rubic font-[500] text-[22px] leading-[27.5px] text-mdc">Внесены изменения в ФККО</h4>
+                                    <p class="font-open-sans font-[400] text-[16px] leading-[32px] text-mdc my-[20px]">
+                                        Обратите внимание на внесенные изменения в Федеральный классификационный каталог отходов, 
+                                        утвержденный приказом Росприроднадзора от 22.05.2017 № 242.
+                                    </p>
+                                </div>
+                                <div class="absolute left-0 bottom-[40px] right-0 px-[25px] w-full h-auto flex items-center justify-between">
+                                    <div class="font-open-sans font-[400] text-[16px] leading-[32px] text-mgc">14 ноября 2021</div>
+                                    <div class="font-open-sans font-[400] text-[16px] leading-[32px] text-mc">Читать полностью</div>
+                                </div>
+                            </a>
+
+                            <a href="view-news.html" class="relative flex items-stretch justify-between xl:block w-full xl:w-[380px] h-[400px] xl:h-[778px] rounded-[15px] shadow-[0px_0px_10px_#E6E6E6] overflow-hidden hover:scale-105 hover:shadow-[0px_0px_50px_#E6E6E6] ease-in-out duration-300 mb-[30px] xl:mb-0">
+                                <div class="w-[50%] xl:w-full xl:h-[50%] bg-[length:auto__100%] md:bg-[length:100%__auto] bg-center bg-no-repeat" style="background-image: url('../image/index/img-05.png');">
+                                    <!-- The news image via css -->
+                                </div>
+                                <div class="w-[50%] xl:w-full px-[25px] py-[40px]">
+                                    <h4 class="font-rubic font-[500] text-[22px] leading-[27.5px] text-mdc">Новые требования к проверочным листам</h4>
+                                    <p class="font-open-sans font-[400] text-[16px] leading-[32px] text-mdc my-[20px]">
+                                        Проверочный должен содержать QR-код
+                                        (при считывании можно получить доступ к сведениям о проверке в едином реестре)
+                                    </p>
+                                </div>
+                                <div class="absolute left-0 bottom-[40px] right-0 px-[25px] w-full h-auto flex items-center justify-between">
+                                    <div class="font-open-sans font-[400] text-[16px] leading-[32px] text-mgc">12 ноября 2021</div>
+                                    <div class="font-open-sans font-[400] text-[16px] leading-[32px] text-mc">Читать полностью</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="w-full mt-[60px]">
+                            <a href="news.html" class="w-full sm:w-auto inline-block text-center font-open-sans font-[600] text-[16px] leading-[24px] text-mlc hover:text-white px-[50px] py-[15px] bg-white hover:bg-mlc rounded-[15px] shadow-[0px_0px_5px_#5DC383] ring-2 ring-mlc ring-offset-2 ease-in-out duration-300 relative left-[50%] translate-x-[-50%]">Читать все новости</a>
+                        </div>
+                    </div>
+                </div>
+
+                <a name="request"></a>
+                <div class="w-full h-auto min-w-[640px] pb-[100px] m-auto px-[20px] sm:px-0">
+                    <div class="container py-[120px] lg:py-0 h-auto lg:h-[550px] bg-[url('../image/bg/bg-request.png')] bg-[length:auto_140%] xl:bg-[length:100%_100%] xxl:bg-[length:100%_auto] bg-center bg-no-repeat block lg:flex items-stretch justify-center rounded-[15px]">
+                        <div class="w-full lg:w-[40%] pl-[50px] xl:pl-[169px] pr-[50px] lg:pr-0 flex items-center justify-start">
+                            <div>
+                                <h2 class="font-rubic font-[700] text-[36px] leading-[45px] text-white uppercase mb-[20px]">Давайте сотрудничать</h2>
+                                <p class="font-open-sans font-[400] text-[16px] leading-[32px] text-white">
+                                    Больше не нужно искать другие организации! Мы возьмем на 
+                                    себя все вопросы связанные со сбором, транспортировкой и 
+                                    утилизацией отходов вашей компании
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-[60%] pl-[50px] lg:pl-[80px] flex items-center justify-start mt-[40px] lg:mt-0">
+                            <form class="w-full pr-[50px] xl:pr-[155px] block">
+                                <div class="w-[100%] mb-[20px]">
+                                    <label for="msg" class="font-open-sans font-[400] text-[12px] leading-[24px] text-white mb-[5px]">Ваше имя *</label>
+                                    <div class="w-full relative">
+                                        <svg class="w-[16px] h-[16px] absolute left-[20px] top-[50%] translate-y-[-50%] text-mlc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                                        </svg>
+                                        <input type="text" id="msg" class="w-full h-[50px] rounded-[15px] pl-[50px] focus:outline-none" placeholder="Иван Иванов">
+                                    </div>
+                                </div>
+                                <div class="w-full block sm:flex sm:items-stretch sm:justify-between">
+                                    <div class="w-full sm:w-[50%] mr-0 sm:mr-[30px]">
+                                        <label for="name" class="font-open-sans font-[400] text-[12px] leading-[24px] text-white mb-[5px]">Электронная почта *</label>
+                                        <div class="w-full relative">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[16px] h-[16px] absolute left-[20px] top-[50%] translate-y-[-50%] text-mlc" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                            </svg>
+                                            <input type="text" id="name" class="w-full h-[50px] rounded-[15px] pl-[50px] focus:outline-none" placeholder="ivanov@mail.com">
+                                        </div>
+                                    </div>
+                                    <div class="w-full sm:w-[50%] mt-[20px] sm:mt-0 mt-[50px]">
+                                        <label for="tel" class="font-open-sans font-[400] text-[12px] leading-[24px] text-white mb-[5px]">Введите номер телефона *</label>
+                                        <div class="w-full relative">
+                                            <svg class="w-[16px] h-[16px] absolute left-[20px] top-[50%] translate-y-[-50%] text-mlc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                            </svg>
+                                            <input type="text" id="tel" class="w-full h-[50px] rounded-[15px] pl-[50px] focus:outline-none" placeholder="+7 999 12 34 567">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-[100%] mt-[20px]">
+                                    <label for="msg" class="font-open-sans font-[400] text-[12px] leading-[24px] text-white mb-[5px]">Введите комментарий</label>
+                                    <div class="w-full relative">
+                                        <svg class="w-[16px] h-[16px] absolute left-[20px] top-[50%] translate-y-[-50%] text-mlc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z" />
+                                            <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z" />
+                                        </svg>
+                                        <input type="text" id="msg" class="w-full h-[50px] rounded-[15px] pl-[50px] focus:outline-none" placeholder="Если есть вопросы, напишите их в этом поле">
+                                    </div>
+                                </div>
+                                <div class="w-[100%] mt-[20px] font-open-sans font-[400] text-[12px] leading-[24px] text-white mb-[5px]">
+                                    Нажимая кнопку "Отправить заявку", я подтверждаю, что ознакомлен и согласен с политикой конфиденциальности
+                                </div>
+                                <div class="w-full mt-[20px]">
+                                    <button type="submit" class="w-full sm:w-auto text-center font-open-sans font-[600] text-[16px] leading-[24px] text-white px-[50px] py-[15px] bg-mlc rounded-[15px] shadow-[0px_0px_5px_#5DC383] hover:ring-2 ring-mlc hover:ring-offset-2 ease-in-out duration-300 relative">Оставить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+            <footer class="max-w-[1920px] min-w-[640px] h-auto bg-mc relative">
+                <a href="#top-page" class="absolute left-[60px] bottom-[60px] text-[#5EA57A]">
+                    <svg class="m-auto" width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 9.24268L7.75732 3L1.51465 9.24267" stroke="#5DC383" stroke-width="3"/>
+                    </svg>
+                    <div class="font-open-sans font-[600] text-[10px] text-center">
+                        В НАЧАЛО
+                    </div>
+                </a>
+
+                <div class="container max-w-[1280px] min-w-[640px] block lg:flex lg:items-stretch lg:justify-between py-[50px] px-[20px] xl:px-0">
+                        <div class=" grid grid-cols-2 grid-rows-1">
+                            <div class=" mb-[20px] lg:mb-0">
+                                <h6 class="font-open-sans font-[700] text-[12px] leading-[24px] mb-[10px] block text-[#5EA57A] uppercase">ПромУтилизация</h6>
+                                <div class="flex items-stretch justify-start lg:justify-start">
+                                    <div>
+                                        <div class="flex items-center justify-start">
+                                            <a href="about.html" class="font-open-sans font-[400] text-[14px] leading-[28px] text-white hover:text-mdc block mr-[20px]">Главная</a>
+                                            <a href="contacts.html" class="font-open-sans font-[400] text-[14px] leading-[28px] text-white hover:text-mdc block">Новости</a>
+                                        </div>
+                                        
+                                        <a href="doc.html" class="font-open-sans font-[400] text-[14px] leading-[28px] text-white hover:text-mdc block">Основные  напрваления</a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class=" mb-[20px] lg:mb-0">
+                                <h6 class="font-open-sans font-[700] text-[12px] leading-[24px] mb-[10px] block text-[#5EA57A] uppercase">Юридическая информация</h6>
+                                <div>
+                                    <a href="politic.html" class="font-open-sans font-[400] text-[14px] leading-[28px] text-white hover:text-mdc block">Политика конфиденциальности</a>
+                                    <div class="flex items-center justify-start">
+                                        <a href="news.html" class="font-open-sans font-[400] text-[14px] leading-[28px] text-white hover:text-mdc block mr-[20px]">Лицензи</a>
+                                        <a href="company.html" class="font-open-sans font-[400] text-[14px] leading-[28px] text-white hover:text-mdc block">Контакты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class=" grid grid-cols-2 grid-rows-1 gap-4">
+                        <div class=" mb-[20px] lg:mb-0">
+                            <h6 class="font-open-sans font-[700] text-[12px] leading-[24px] mb-[10px] block text-[#5EA57A] uppercase">Контакты</h6>
+                            <div class="lg:flex lg:items-stretch justify-start lg:justify-center">
+                                <div>
+                                    <a href="tel:8 (8422) 27-33-88" class="font-open-sans font-[400] text-[14px] leading-[28px] text-white hover:text-mdc block">8 (8422) 27-33-88</a>
+                                    <a href="mailto:promutil@rambler.ru" class="font-open-sans font-[400] text-[14px] leading-[28px] text-white hover:text-mdc block">promutil@rambler.ru</a>
+                                </div>
+                                <div class="lg:ml-[30px] lg:border-l-[1px] lg:border-solid lg:border-white lg:pl-[30px]">
+                                    <div class="font-open-sans font-[400] text-[14px] leading-[28px] text-white hover:text-mdc block cursor-crosshair">
+                                        432071, г.Ульяновск,<br>
+                                        ул. Радищева, 104Б
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" mb-[20px] lg:mb-0 flex items-stretch justify-start lg:justify-center">
+                            <div>
+                                <h6 class="font-open-sans font-[700] text-[12px] leading-[24px] mb-[10px] block text-[#5EA57A] uppercase">НАШИ СОЦИАЛЬНЫЕ СЕТИ</h6>
+                                <div class="flex items-stretch justify-start">
+                                    <a href="" class="hover:scale-105 ease-in-out duration-300 mr-[20px] lg:mr-0">
+                                        <img src="../image/index/inst.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full h-[50px] bg-[#212121] px-[20px] xl:px-0">
+                    <div class="container max-w-[1280px] h-full flex items-center justify-between">
+                        <div class="font-open-sans font-[400] text-[12px] leading-[24px] text-white">
+                            © 2022 ООО ПромУтилизация
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <div class="font-open-sans font-[400] text-[12px] leading-[24px] text-white mr-[10px]" >Сайт разработан в студии </div> 
+                            <a href="https://ideait.ru/"><img src="../image/logo_white_ideait.png" class="h-[30px]"></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="../jquery/jquery-3.6.0.js"></script>
+        <script src="../js/promutil.function.js"></script>
+        <script src="sal.js"></script>
+        <script>
+            sal({
+                threshold: 1,
+                once: false,
+            });
+        </script>
+    </body>
+</html>
